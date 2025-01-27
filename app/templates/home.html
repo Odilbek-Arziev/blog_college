@@ -32,6 +32,59 @@
             font-size: 20px;
             cursor: pointer;
         }
+
+        .container {
+            min-height: 90vh;
+        }
+
+        .posts {
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .post {
+            box-shadow: 0 0 20px #cacaca;
+            padding: 20px;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            transition: .5s;
+            cursor: pointer;
+        }
+
+        .post-title {
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .post-body {
+            color: grey;
+            font-size: 14px;
+            font-style: italic;
+        }
+
+        .post-created-data {
+            text-align: right;
+            color: lightblue;
+        }
+
+        .post-author {
+            color: lightgrey;
+            text-align: right;
+        }
+
+        .post {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 20vw;
+        }
+
+        .post:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 15px 20px #cacaca;
+        }
     </style>
 </head>
 
@@ -39,6 +92,20 @@
     <div class="navbar">
         <div class="navbar-start">
             <div class="navbar-logo">Блог</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="posts">
+            <div class="post">
+                <div class="post-title">Пост №1</div>
+                <div class="post-body">
+                    Lorem ipsum dolor sit amet...
+                </div>
+                <div class="post-created-data">27.01.2025</div>
+                <div class="post-author">
+                    Автор: Иван Иванов
+                </div>
+            </div>
         </div>
     </div>
 </body>
